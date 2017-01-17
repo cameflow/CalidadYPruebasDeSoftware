@@ -2,7 +2,7 @@
 #include <iostream>
 
 int factorial(int a);
-// 
+//
 // int main(int argc, char const *argv[])
 // {
 //   std::cout << factorial(4) << '\n';
@@ -11,7 +11,11 @@ int factorial(int a);
 
 int factorial(int a)
 {
-  if (a == 0)
+  if(a < 0)
+  {
+    return 0;
+  }
+  else if (a == 0)
   {
     return 1;
   }

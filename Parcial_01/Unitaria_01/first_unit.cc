@@ -9,5 +9,6 @@ TEST (Factorial,positivos)
 
 TEST (Factorial,negativos)
 {
-
+  ASSERT_EQ(0,factorial(-3))
+  ASSERT_EQ(0,factorial(-8))
 }
