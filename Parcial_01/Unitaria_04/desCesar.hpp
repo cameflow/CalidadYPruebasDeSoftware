@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 class desCesar {
-
-void descypher(std::string w);
+public:
+  bool descypher(std::string w,std::vector<std::string> d);
 
 };
 
-void desCesar::descypher(std::string w){
+bool desCesar::descypher(std::string w, std::vector<std::string> d){
   std::string word = w;
   std::string desWord;
   char c;
@@ -26,5 +27,13 @@ void desCesar::descypher(std::string w){
       desWord += c;
     }
     std::cout << desWord << std::endl;
+    for(int j=0;j<d.size();j++)
+    {
+      if(desWord == d[j])
+      {
+        return true;
+      }
+    }
   }
+  return false;
 }
