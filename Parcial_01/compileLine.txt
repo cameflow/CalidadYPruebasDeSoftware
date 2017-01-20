@@ -1,0 +1,1 @@
+g++ 'testFile'.cc ../../googleTest/googletest/make/gtest_main.a -o test.out -isystem ../../googleTest/googletest/include/
