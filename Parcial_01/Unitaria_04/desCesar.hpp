@@ -4,11 +4,12 @@
 
 class desCesar {
 public:
-  bool descypher(std::string w,std::vector<std::string> d);
+  std::string descypher(std::string w,std::vector<std::string> d);
 
 };
 
-bool desCesar::descypher(std::string w, std::vector<std::string> d){
+std::string desCesar::descypher(std::string w, std::vector<std::string> d)
+{
   std::string word = w;
   std::string desWord;
   char c;
@@ -31,9 +32,9 @@ bool desCesar::descypher(std::string w, std::vector<std::string> d){
     {
       if(desWord == d[j])
       {
-        return true;
+        return desWord;
       }
     }
   }
-  return false;
+  return "";
 }

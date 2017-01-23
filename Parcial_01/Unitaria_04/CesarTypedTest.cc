@@ -30,5 +30,5 @@ TYPED_TEST(FixTyped, testName)
   x.push_back("DONE");
   x.push_back("GARDEN");
   x.push_back("FKDAFD");
-  EXPECT_EQ(true,this->instance2Test->descypher("RLCOPY",x));
+  EXPECT_EQ("GARDEN",this->instance2Test->descypher("RLCOPY",x));
 }
